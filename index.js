@@ -3,8 +3,6 @@ const client = new Client({ intents: 32767})
 
 require('dotenv').config()
 
-client.once("ready", () => {
-    console.log("Bot connecté");
-})
+require('./utils/handlers/EventUtil')(client)
 
 client.login(process.env.token)
