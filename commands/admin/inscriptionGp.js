@@ -48,8 +48,12 @@ module.exports = {
     const gp = interaction.options.getString("gp");
     const jourFin = interaction.options.getString("jourfin");
     await interaction.reply({ content: "Inscription GP OK", ephemeral: true });
-    await interaction.channel.send(
+
+
+    const inscriptiongp = await interaction.channel.send(
       `${groupe} \n${date} (Invitation 20h45) \n${gp} \n(Inscription jusqu’à ${jourFin} 21h) \n\n :white_check_mark: Présent \n :x: Absent`
     );
+    inscriptiongp.react('<:checkmark_sondage:947109688183509003>')
+    inscriptiongp.react('<:cross_sondage:947109688422567966>')
   },
 };
