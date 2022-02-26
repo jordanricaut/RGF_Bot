@@ -1,6 +1,7 @@
 module.exports = {
     name: "ping",
-    run: (client, message, args) => {
-        message.channel.send('Pong !')
+    description: 'commande ping',
+    execute(client, interaction) {
+        interaction.reply({content: `Pong ! J'ai ${client.ws.ping} de ping`})
     }
 }
