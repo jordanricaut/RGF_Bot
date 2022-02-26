@@ -8,7 +8,7 @@ module.exports = async (client) => {
 
     if (!eventList.includes(event.name) || !event.name) {
       return console.log(
-        `------\nEvenement non-déclenché : Erreur de typo (ou pas de nom)\nFichier => ${eventFile}\n-------`
+        `------\n🔴 Evenement : Erreur de typo (ou pas de nom)\nFichier => ${eventFile}\n-------`
       );
     }
 
@@ -18,7 +18,7 @@ module.exports = async (client) => {
       client.on(event.name, (...args) => event.execute(client, ...args));
     }
 
-    console.log(`Evenement chargé: ${event.name}`);
+    console.log(`🟢 Evenement : ${event.name}`);
   });
 };
 
