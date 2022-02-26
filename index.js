@@ -1,5 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const client = new Client({ intents: 32767 });
+const mongoose = require('mongoose')
 
 require("dotenv").config();
 
@@ -19,5 +20,6 @@ process.on("unhandledRejection", (reason, promise) => {
   console.log(`UNHANDLED_REJECTION: ${reason}\n-----\n`, promise);
 });
 process.on("warning", (...args) => console.log(...args));
+
 
 client.login(process.env.token);
