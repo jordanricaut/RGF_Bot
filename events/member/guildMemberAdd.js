@@ -9,7 +9,7 @@ module.exports = {
     execute(client, member) {
         const { user, guild } = member;
 
-        member.roles.add("849266574627700767");
+        member.roles.add("844320472748261457");
 
         const Welcomer = new WebhookClient({
             id: "946562964805271612",

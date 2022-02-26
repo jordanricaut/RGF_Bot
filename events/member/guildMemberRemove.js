@@ -16,7 +16,7 @@ module.exports = {
 
         const Depart = new MessageEmbed()
         .setColor('#2778b4')
-        .setTitle('Un membre viens de partir 😢')
+        .setTitle('Bye bye je quitte 😢')
         .setThumbnail(user.avatarURL({dynamic: true, size: 512}))
         .setDescription(`${member} est parti du serveur\n\nAvait rejoint le serveur <t:${parseInt(member.joinedTimestamp / 1000)}:R>`)
 
