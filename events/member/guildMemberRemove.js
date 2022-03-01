@@ -18,7 +18,7 @@ module.exports = {
         .setColor('#2778b4')
         .setTitle('Bye bye je quitte 😢')
         .setThumbnail(user.avatarURL({dynamic: true, size: 512}))
-        .setDescription(`${member} est parti du serveur\n\nAvait rejoint le serveur <t:${parseInt(member.joinedTimestamp / 1000)}:R>`)
+        .setDescription(`**${user.username}** est parti du serveur\n\nAvait rejoint le serveur <t:${parseInt(member.joinedTimestamp / 1000)}:R>`)
 
         Welcomer.send({embeds: [Depart]})
     }

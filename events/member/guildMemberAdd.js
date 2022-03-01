@@ -21,7 +21,7 @@ module.exports = {
         .setTitle("Un nouveau membre !")
         .setThumbnail(user.avatarURL({dynamic: true, size: 512}))
         .setTimestamp()
-        .setDescription(`🎉 **Bienvenue ${member} sur le serveur de la ${guild.name} **🎉\n\nN'hésite pas à te présenter dans le salon **Qui est-tu** et de lire le **règlement**`)
+        .setDescription(`🎉 **Bienvenue ${member} sur le serveur de la ${guild.name} **🎉\n\nN'hésite pas à te présenter dans le salon **Qui est-tu ?** et de lire le **règlement**`)
 
         Welcomer.send({embeds: [Welcome]})
     }
