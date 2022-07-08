@@ -17,8 +17,8 @@ module.exports = {
             value: "<@&840302457136349235>",
           },
           {
-            name: "Groupe Dimanche",
-            value: "<@&912126936271175712>",
+            name: "Summer League",
+            value: "<@&994702262037393428>",
           },
         ],
       },
