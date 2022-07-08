@@ -17,8 +17,8 @@ module.exports = {
           value: "<@&840302457136349235>",
         },
         {
-          name: "Summer League",
-          value: "<@&994702262037393428>",
+          name: "Groupe Dimanche",
+          value: "<@&912126936271175712>",
         },
       ],
     },
@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       name: "jourfin",
-      description: "Lundi G2 / Mercredi G1 / Lundi SL",
+      description: "Lundi G2 / Mercredi G1",
       type: "STRING",
       required: true,
     },
